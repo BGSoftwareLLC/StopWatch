@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<controlbaseclasses:GradientContentPage
+            xmlns:controlbaseclasses="clr-namespace:BGStopwatch.Helpers"
+            xmlns:FontAwesome="clr-namespace:BGStopwatch.Fonts"
+            xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="BGStopWatch.MainPage"
+            Padding="0, 50, 0, 50">
+
+    <StackLayout>
+            <Image Source="logo.png"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Center" />
+            <Label x:Name="labelStopwatch" 
+                   FontSize="55" 
+                   FontAttributes="Bold"
+                   TextColor="Black"
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand">
+            <Label.FontFamily>
+                <OnPlatform x:TypeArguments="x:String">
+                    <OnPlatform.iOS>Menlo</OnPlatform.iOS>
+                    <OnPlatform.Android>monospace</OnPlatform.Android>
+                </OnPlatform>
+            </Label.FontFamily>
+        </Label>
+
+            <StackLayout HorizontalOptions="Center"
+                         Orientation="Horizontal">
+                <Button x:Name="buttonStart" 
+                        Clicked="buttonStart_Clicked" 
+                        Text="{x:Static FontAwesome:FontAwesome5FreeSolid.Play}"
+                        FontFamily="{StaticResource FontAwesome5FreeSolid}"
+                        TextColor="Black"
+                        BackgroundColor="Transparent">
+                </Button>
+                <Button x:Name="buttonStop" 
+                        Text="{x:Static FontAwesome:FontAwesome5FreeSolid.Pause}"
+                        FontFamily="{StaticResource FontAwesome5FreeSolid}"
+                        TextColor="Black"
+                        Clicked="buttonStop_Clicked"
+                        BackgroundColor="Transparent">
+                </Button>
+                <Button x:Name="buttonReset" 
+                        Text="{x:Static FontAwesome:FontAwesome5FreeSolid.Sync}"
+                        FontFamily="{StaticResource FontAwesome5FreeSolid}"
+                        TextColor="Black"
+                        Clicked="buttonReset_Clicked"
+                        BackgroundColor="Transparent">
+                </Button>
+</StackLayout>
+    </StackLayout>
+
+</controlbaseclasses:GradientContentPage>
