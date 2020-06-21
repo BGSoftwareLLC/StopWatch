@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BGStopwatch.Android", "BGSt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BGStopwatch.iOS", "BGStopwatch.iOS\BGStopwatch.iOS.csproj", "{6FE3153C-BB22-4070-9A4C-DD2CBC853087}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BGStopwatch", "BGStopwatch\BGStopwatch.csproj", "{557BE6D6-0E43-425D-87A9-B692BA2A4721}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BGStopwatch", "BGStopwatch\BGStopwatch.csproj", "{557BE6D6-0E43-425D-87A9-B692BA2A4721}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,8 +26,6 @@ Global
 		{C8E00BDE-5871-4768-B310-52FAA836CC9B}.Debug|iPhone.Build.0 = Debug|Any CPU
 		{C8E00BDE-5871-4768-B310-52FAA836CC9B}.Debug|iPhone.Deploy.0 = Debug|Any CPU
 		{C8E00BDE-5871-4768-B310-52FAA836CC9B}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
-		{C8E00BDE-5871-4768-B310-52FAA836CC9B}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
-		{C8E00BDE-5871-4768-B310-52FAA836CC9B}.Debug|iPhoneSimulator.Deploy.0 = Debug|Any CPU
 		{C8E00BDE-5871-4768-B310-52FAA836CC9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8E00BDE-5871-4768-B310-52FAA836CC9B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C8E00BDE-5871-4768-B310-52FAA836CC9B}.Release|Any CPU.Deploy.0 = Release|Any CPU
