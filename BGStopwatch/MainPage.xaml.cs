@@ -25,7 +25,10 @@ namespace BGStopWatch
 
                 Device.StartTimer(TimeSpan.FromMilliseconds(100), () =>
                     {
-                        labelStopwatch.Text = string.Format("{0:hh\\:mm\\:ss\\.ff}", stopwatch.Elapsed);
+                        Device.BeginInvokeOnMainThread(() =>
+                        {
+                            labelStopwatch.Text = string.Format("{0:hh\\:mm\\:ss\\.ff}", stopwatch.Elapsed);
+                        });
 
                         if (!stopwatch.IsRunning)
                             return false;
